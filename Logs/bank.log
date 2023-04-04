@@ -1,0 +1,9 @@
+WARNING :- 2023-04-03 15:57:14,750 - app : Starting the connection to display all accounts
+WARNING :- 2023-04-03 15:57:15,100 - app : Displayed all account, closing the connection
+WARNING :- 2023-04-03 15:57:15,100 - app : Displayed all account, closing the connection
+WARNING:2023-04-04 14:48:04,426:app:Starting the db connection to display list of accounts
+INFO:2023-04-04 14:48:04,965:app:Displayed list of all accounts
+INFO:2023-04-04 14:48:04,965:app:Displayed list of all accounts
+WARNING:2023-04-04 14:48:04,966:app:Hence accounts displayed, closing the connection
+WARNING:2023-04-04 14:48:04,966:app:Hence accounts displayed, closing the connection
+WARNING:2023-04-04 14:48:04,966:app:Hence accounts displayed, closing the connection
