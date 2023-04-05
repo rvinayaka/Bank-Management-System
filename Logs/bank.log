@@ -7,3 +7,15 @@ INFO:2023-04-04 14:48:04,965:app:Displayed list of all accounts
 WARNING:2023-04-04 14:48:04,966:app:Hence accounts displayed, closing the connection
 WARNING:2023-04-04 14:48:04,966:app:Hence accounts displayed, closing the connection
 WARNING:2023-04-04 14:48:04,966:app:Hence accounts displayed, closing the connection
+WARNING:2023-04-05 12:08:11,023:app:Starting the db connection to display list of accounts
+INFO:2023-04-05 12:08:11,300:app:Displayed list of all accounts
+INFO:2023-04-05 12:08:11,300:app:Displayed list of all accounts
+WARNING:2023-04-05 12:08:11,301:app:Hence account created, closing the connection
+WARNING:2023-04-05 12:08:11,301:app:Hence account created, closing the connection
+WARNING:2023-04-05 12:08:11,301:app:Hence account created, closing the connection
+WARNING:2023-04-05 12:39:22,167:app:Starting the db connection to display list of accounts
+INFO:2023-04-05 12:39:22,417:app:Displayed list of all accounts
+INFO:2023-04-05 12:39:22,417:app:Displayed list of all accounts
+WARNING:2023-04-05 12:39:22,417:app:Hence account created, closing the connection
+WARNING:2023-04-05 12:39:22,417:app:Hence account created, closing the connection
+WARNING:2023-04-05 12:39:22,417:app:Hence account created, closing the connection
