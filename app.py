@@ -1,7 +1,7 @@
 import psycopg2
 from flask import Flask, flash, request, jsonify
 from conn import set_connection         # fetching the connection from other file
-from settings import logger
+from settings import logger, handle_exceptions
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'super secret key'
@@ -18,29 +18,6 @@ app.config['SECRET_KEY'] = 'super secret key'
 
 
 
-def handle_exceptions(func):
-    def wrapper(*args, **kwargs):
-        try:
-            return func(*args, **kwargs)
-        except psycopg2.Error as error:
-            conn = kwargs.get('conn')
-            if conn:
-                conn.rollback()
-            logger(__name__).error(f"Error occurred: {error}")
-            return jsonify({"message": f"Error occurred: {error}"})
-        except Exception as error:
-            logger(__name__).error(f"Error occurred: {error}")
-            return jsonify({"message": f"Error occurred: {error}"})
-        finally:
-            conn = kwargs.get("conn")
-            cur = kwargs.get("cur")
-            # close the database connection
-            if conn:
-                conn.close()
-            if cur:
-                cur.close()
-            logger(__name__).warning("Hence account created, closing the connection")
-    return wrapper
 
 
 @app.route("/insert", methods=["POST"])      # CREATE an account
@@ -77,8 +54,6 @@ def create_account():
     return jsonify({"message": "Account created"}), 200
 
 
-
-
 @app.route("/", methods=["GET"], endpoint='show_list')        # READ the details
 @handle_exceptions
 def show_list():
@@ -94,7 +69,6 @@ def show_list():
     logger(__name__).info("Displayed list of all accounts")
 
     return jsonify({"message": data}), 202
-
 
 
 # UPDATE (Amount Withdrawal)

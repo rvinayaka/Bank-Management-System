@@ -19,3 +19,9 @@ INFO:2023-04-05 12:39:22,417:app:Displayed list of all accounts
 WARNING:2023-04-05 12:39:22,417:app:Hence account created, closing the connection
 WARNING:2023-04-05 12:39:22,417:app:Hence account created, closing the connection
 WARNING:2023-04-05 12:39:22,417:app:Hence account created, closing the connection
+WARNING:2023-04-06 14:58:44,572:app:Starting the db connection to display list of accounts
+INFO:2023-04-06 14:58:44,784:app:Displayed list of all accounts
+INFO:2023-04-06 14:58:44,784:app:Displayed list of all accounts
+WARNING:2023-04-06 14:58:44,784:app:Hence account created, closing the connection
+WARNING:2023-04-06 14:58:44,784:app:Hence account created, closing the connection
+WARNING:2023-04-06 14:58:44,784:app:Hence account created, closing the connection
