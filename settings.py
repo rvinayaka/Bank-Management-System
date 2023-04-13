@@ -49,5 +49,5 @@ def handle_exceptions(func):
                 conn.close()
             if cur:
                 cur.close()
-            logger(__name__).warning("Closing the connection")
+            logger(__name__).warning("Closing the connection through exception function")
     return wrapper

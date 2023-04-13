@@ -25,3 +25,436 @@ INFO:2023-04-06 14:58:44,784:app:Displayed list of all accounts
 WARNING:2023-04-06 14:58:44,784:app:Hence account created, closing the connection
 WARNING:2023-04-06 14:58:44,784:app:Hence account created, closing the connection
 WARNING:2023-04-06 14:58:44,784:app:Hence account created, closing the connection
+WARNING:2023-04-12 16:46:04,157:app:Starting the db connection to deposit amount into the account
+INFO:2023-04-12 16:46:04,391:app:Amount withdrawal from account no. 2 completed
+INFO:2023-04-12 16:46:04,391:app:Amount withdrawal from account no. 2 completed
+WARNING:2023-04-12 16:46:04,971:app:Starting the db connection to send notification to the account no. 2
+WARNING:2023-04-12 16:46:04,971:app:Starting the db connection to send notification to the account no. 2
+WARNING:2023-04-12 16:46:04,971:app:Starting the db connection to send notification to the account no. 2
+INFO:2023-04-12 16:46:05,147:app:Notification send to account with number 2
+INFO:2023-04-12 16:46:05,147:app:Notification send to account with number 2
+INFO:2023-04-12 16:46:05,147:app:Notification send to account with number 2
+INFO:2023-04-12 16:46:05,147:app:Notification send to account with number 2
+WARNING:2023-04-12 16:46:05,147:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:46:05,147:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:46:05,147:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:46:05,147:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:46:05,147:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:46:05,148:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:46:05,148:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:46:05,148:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:46:05,148:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:46:05,148:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:46:05,148:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:46:05,148:settings:Closing the connection
+ERROR:2023-04-12 16:46:55,930:app:Exception on /bank/notifications/ [PUT]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: send_notifications() missing 2 required positional arguments: 'srno' and 'message'
+ERROR:2023-04-12 16:46:55,930:app:Exception on /bank/notifications/ [PUT]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: send_notifications() missing 2 required positional arguments: 'srno' and 'message'
+ERROR:2023-04-12 16:46:55,930:app:Exception on /bank/notifications/ [PUT]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: send_notifications() missing 2 required positional arguments: 'srno' and 'message'
+ERROR:2023-04-12 16:46:55,930:app:Exception on /bank/notifications/ [PUT]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: send_notifications() missing 2 required positional arguments: 'srno' and 'message'
+ERROR:2023-04-12 16:46:55,930:app:Exception on /bank/notifications/ [PUT]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: send_notifications() missing 2 required positional arguments: 'srno' and 'message'
+ERROR:2023-04-12 16:46:55,930:app:Exception on /bank/notifications/ [PUT]
+Traceback (most recent call last):
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bc2113451/Desktop/VS Code/Oops/.venv/lib/python3.8/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: send_notifications() missing 2 required positional arguments: 'srno' and 'message'
+WARNING:2023-04-12 16:52:31,380:app:Starting the db connection to deposit into the account
+WARNING:2023-04-12 16:52:31,380:app:Starting the db connection to deposit into the account
+WARNING:2023-04-12 16:52:31,380:app:Starting the db connection to deposit into the account
+WARNING:2023-04-12 16:52:31,380:app:Starting the db connection to deposit into the account
+WARNING:2023-04-12 16:52:31,380:app:Starting the db connection to deposit into the account
+WARNING:2023-04-12 16:52:31,380:app:Starting the db connection to deposit into the account
+WARNING:2023-04-12 16:52:31,380:app:Starting the db connection to deposit into the account
+INFO:2023-04-12 16:52:31,662:app:Depositing amount into account no. 2 completed
+INFO:2023-04-12 16:52:31,662:app:Depositing amount into account no. 2 completed
+INFO:2023-04-12 16:52:31,662:app:Depositing amount into account no. 2 completed
+INFO:2023-04-12 16:52:31,662:app:Depositing amount into account no. 2 completed
+INFO:2023-04-12 16:52:31,662:app:Depositing amount into account no. 2 completed
+INFO:2023-04-12 16:52:31,662:app:Depositing amount into account no. 2 completed
+INFO:2023-04-12 16:52:31,662:app:Depositing amount into account no. 2 completed
+INFO:2023-04-12 16:52:31,662:app:Depositing amount into account no. 2 completed
+WARNING:2023-04-12 16:52:31,662:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 16:52:31,662:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 16:52:31,662:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 16:52:31,662:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 16:52:31,662:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 16:52:31,662:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 16:52:31,662:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 16:52:31,662:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 16:52:31,662:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 16:52:31,663:settings:Closing the connection
+WARNING:2023-04-12 16:52:31,663:settings:Closing the connection
+WARNING:2023-04-12 16:52:57,263:app:Starting the db connection to deposit amount into the account
+WARNING:2023-04-12 16:52:57,263:app:Starting the db connection to deposit amount into the account
+WARNING:2023-04-12 16:52:57,263:app:Starting the db connection to deposit amount into the account
+WARNING:2023-04-12 16:52:57,263:app:Starting the db connection to deposit amount into the account
+WARNING:2023-04-12 16:52:57,263:app:Starting the db connection to deposit amount into the account
+WARNING:2023-04-12 16:52:57,263:app:Starting the db connection to deposit amount into the account
+WARNING:2023-04-12 16:52:57,263:app:Starting the db connection to deposit amount into the account
+WARNING:2023-04-12 16:52:57,263:app:Starting the db connection to deposit amount into the account
+WARNING:2023-04-12 16:52:57,263:app:Starting the db connection to deposit amount into the account
+WARNING:2023-04-12 16:52:57,263:app:Starting the db connection to deposit amount into the account
+INFO:2023-04-12 16:52:57,467:app:Amount withdrawal from account no. 2 completed
+INFO:2023-04-12 16:52:57,467:app:Amount withdrawal from account no. 2 completed
+INFO:2023-04-12 16:52:57,467:app:Amount withdrawal from account no. 2 completed
+INFO:2023-04-12 16:52:57,467:app:Amount withdrawal from account no. 2 completed
+INFO:2023-04-12 16:52:57,467:app:Amount withdrawal from account no. 2 completed
+INFO:2023-04-12 16:52:57,467:app:Amount withdrawal from account no. 2 completed
+INFO:2023-04-12 16:52:57,467:app:Amount withdrawal from account no. 2 completed
+INFO:2023-04-12 16:52:57,467:app:Amount withdrawal from account no. 2 completed
+INFO:2023-04-12 16:52:57,467:app:Amount withdrawal from account no. 2 completed
+INFO:2023-04-12 16:52:57,467:app:Amount withdrawal from account no. 2 completed
+INFO:2023-04-12 16:52:57,467:app:Amount withdrawal from account no. 2 completed
+WARNING:2023-04-12 16:52:57,903:app:Starting the db connection to send notification to the account no. 2
+WARNING:2023-04-12 16:52:57,903:app:Starting the db connection to send notification to the account no. 2
+WARNING:2023-04-12 16:52:57,903:app:Starting the db connection to send notification to the account no. 2
+WARNING:2023-04-12 16:52:57,903:app:Starting the db connection to send notification to the account no. 2
+WARNING:2023-04-12 16:52:57,903:app:Starting the db connection to send notification to the account no. 2
+WARNING:2023-04-12 16:52:57,903:app:Starting the db connection to send notification to the account no. 2
+WARNING:2023-04-12 16:52:57,903:app:Starting the db connection to send notification to the account no. 2
+WARNING:2023-04-12 16:52:57,903:app:Starting the db connection to send notification to the account no. 2
+WARNING:2023-04-12 16:52:57,903:app:Starting the db connection to send notification to the account no. 2
+WARNING:2023-04-12 16:52:57,903:app:Starting the db connection to send notification to the account no. 2
+WARNING:2023-04-12 16:52:57,903:app:Starting the db connection to send notification to the account no. 2
+WARNING:2023-04-12 16:52:57,903:app:Starting the db connection to send notification to the account no. 2
+INFO:2023-04-12 16:52:58,064:app:Notification send to account with number 2
+INFO:2023-04-12 16:52:58,064:app:Notification send to account with number 2
+INFO:2023-04-12 16:52:58,064:app:Notification send to account with number 2
+INFO:2023-04-12 16:52:58,064:app:Notification send to account with number 2
+INFO:2023-04-12 16:52:58,064:app:Notification send to account with number 2
+INFO:2023-04-12 16:52:58,064:app:Notification send to account with number 2
+INFO:2023-04-12 16:52:58,064:app:Notification send to account with number 2
+INFO:2023-04-12 16:52:58,064:app:Notification send to account with number 2
+INFO:2023-04-12 16:52:58,064:app:Notification send to account with number 2
+INFO:2023-04-12 16:52:58,064:app:Notification send to account with number 2
+INFO:2023-04-12 16:52:58,064:app:Notification send to account with number 2
+INFO:2023-04-12 16:52:58,064:app:Notification send to account with number 2
+INFO:2023-04-12 16:52:58,064:app:Notification send to account with number 2
+WARNING:2023-04-12 16:52:58,064:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:52:58,064:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:52:58,064:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:52:58,064:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:52:58,064:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:52:58,064:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:52:58,064:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:52:58,064:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:52:58,064:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:52:58,064:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:52:58,064:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:52:58,064:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:52:58,064:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:52:58,064:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:52:58,065:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:52:58,065:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:52:58,065:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:52:58,065:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:52:58,065:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:52:58,065:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:52:58,065:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:52:58,065:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:52:58,065:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:52:58,065:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:52:58,065:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:52:58,065:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:52:58,065:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:52:58,065:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:52:58,065:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:52:58,066:settings:Closing the connection
+WARNING:2023-04-12 16:52:58,066:settings:Closing the connection
+WARNING:2023-04-12 16:52:58,066:settings:Closing the connection
+WARNING:2023-04-12 16:54:40,569:app:Starting the db connection to deposit amount into the account
+WARNING:2023-04-12 16:54:40,569:app:Starting the db connection to deposit amount into the account
+WARNING:2023-04-12 16:54:40,569:app:Starting the db connection to deposit amount into the account
+WARNING:2023-04-12 16:54:40,569:app:Starting the db connection to deposit amount into the account
+WARNING:2023-04-12 16:54:40,569:app:Starting the db connection to deposit amount into the account
+WARNING:2023-04-12 16:54:40,569:app:Starting the db connection to deposit amount into the account
+WARNING:2023-04-12 16:54:40,569:app:Starting the db connection to deposit amount into the account
+WARNING:2023-04-12 16:54:40,569:app:Starting the db connection to deposit amount into the account
+WARNING:2023-04-12 16:54:40,569:app:Starting the db connection to deposit amount into the account
+WARNING:2023-04-12 16:54:40,569:app:Starting the db connection to deposit amount into the account
+WARNING:2023-04-12 16:54:40,569:app:Starting the db connection to deposit amount into the account
+WARNING:2023-04-12 16:54:40,569:app:Starting the db connection to deposit amount into the account
+WARNING:2023-04-12 16:54:40,569:app:Starting the db connection to deposit amount into the account
+WARNING:2023-04-12 16:54:40,569:app:Starting the db connection to deposit amount into the account
+WARNING:2023-04-12 16:54:40,569:app:Starting the db connection to deposit amount into the account
+WARNING:2023-04-12 16:54:40,569:app:Starting the db connection to deposit amount into the account
+INFO:2023-04-12 16:54:40,774:app:Amount withdrawal from account no. 2 completed
+INFO:2023-04-12 16:54:40,774:app:Amount withdrawal from account no. 2 completed
+INFO:2023-04-12 16:54:40,774:app:Amount withdrawal from account no. 2 completed
+INFO:2023-04-12 16:54:40,774:app:Amount withdrawal from account no. 2 completed
+INFO:2023-04-12 16:54:40,774:app:Amount withdrawal from account no. 2 completed
+INFO:2023-04-12 16:54:40,774:app:Amount withdrawal from account no. 2 completed
+INFO:2023-04-12 16:54:40,774:app:Amount withdrawal from account no. 2 completed
+INFO:2023-04-12 16:54:40,774:app:Amount withdrawal from account no. 2 completed
+INFO:2023-04-12 16:54:40,774:app:Amount withdrawal from account no. 2 completed
+INFO:2023-04-12 16:54:40,774:app:Amount withdrawal from account no. 2 completed
+INFO:2023-04-12 16:54:40,774:app:Amount withdrawal from account no. 2 completed
+INFO:2023-04-12 16:54:40,774:app:Amount withdrawal from account no. 2 completed
+INFO:2023-04-12 16:54:40,774:app:Amount withdrawal from account no. 2 completed
+INFO:2023-04-12 16:54:40,774:app:Amount withdrawal from account no. 2 completed
+INFO:2023-04-12 16:54:40,774:app:Amount withdrawal from account no. 2 completed
+INFO:2023-04-12 16:54:40,774:app:Amount withdrawal from account no. 2 completed
+INFO:2023-04-12 16:54:40,774:app:Amount withdrawal from account no. 2 completed
+WARNING:2023-04-12 16:54:41,197:app:Starting the db connection to send notification to the account no. 2
+WARNING:2023-04-12 16:54:41,197:app:Starting the db connection to send notification to the account no. 2
+WARNING:2023-04-12 16:54:41,197:app:Starting the db connection to send notification to the account no. 2
+WARNING:2023-04-12 16:54:41,197:app:Starting the db connection to send notification to the account no. 2
+WARNING:2023-04-12 16:54:41,197:app:Starting the db connection to send notification to the account no. 2
+WARNING:2023-04-12 16:54:41,197:app:Starting the db connection to send notification to the account no. 2
+WARNING:2023-04-12 16:54:41,197:app:Starting the db connection to send notification to the account no. 2
+WARNING:2023-04-12 16:54:41,197:app:Starting the db connection to send notification to the account no. 2
+WARNING:2023-04-12 16:54:41,197:app:Starting the db connection to send notification to the account no. 2
+WARNING:2023-04-12 16:54:41,197:app:Starting the db connection to send notification to the account no. 2
+WARNING:2023-04-12 16:54:41,197:app:Starting the db connection to send notification to the account no. 2
+WARNING:2023-04-12 16:54:41,197:app:Starting the db connection to send notification to the account no. 2
+WARNING:2023-04-12 16:54:41,197:app:Starting the db connection to send notification to the account no. 2
+WARNING:2023-04-12 16:54:41,197:app:Starting the db connection to send notification to the account no. 2
+WARNING:2023-04-12 16:54:41,197:app:Starting the db connection to send notification to the account no. 2
+WARNING:2023-04-12 16:54:41,197:app:Starting the db connection to send notification to the account no. 2
+WARNING:2023-04-12 16:54:41,197:app:Starting the db connection to send notification to the account no. 2
+WARNING:2023-04-12 16:54:41,197:app:Starting the db connection to send notification to the account no. 2
+INFO:2023-04-12 16:54:41,374:app:Notification send to account with number 2
+INFO:2023-04-12 16:54:41,374:app:Notification send to account with number 2
+INFO:2023-04-12 16:54:41,374:app:Notification send to account with number 2
+INFO:2023-04-12 16:54:41,374:app:Notification send to account with number 2
+INFO:2023-04-12 16:54:41,374:app:Notification send to account with number 2
+INFO:2023-04-12 16:54:41,374:app:Notification send to account with number 2
+INFO:2023-04-12 16:54:41,374:app:Notification send to account with number 2
+INFO:2023-04-12 16:54:41,374:app:Notification send to account with number 2
+INFO:2023-04-12 16:54:41,374:app:Notification send to account with number 2
+INFO:2023-04-12 16:54:41,374:app:Notification send to account with number 2
+INFO:2023-04-12 16:54:41,374:app:Notification send to account with number 2
+INFO:2023-04-12 16:54:41,374:app:Notification send to account with number 2
+INFO:2023-04-12 16:54:41,374:app:Notification send to account with number 2
+INFO:2023-04-12 16:54:41,374:app:Notification send to account with number 2
+INFO:2023-04-12 16:54:41,374:app:Notification send to account with number 2
+INFO:2023-04-12 16:54:41,374:app:Notification send to account with number 2
+INFO:2023-04-12 16:54:41,374:app:Notification send to account with number 2
+INFO:2023-04-12 16:54:41,374:app:Notification send to account with number 2
+INFO:2023-04-12 16:54:41,374:app:Notification send to account with number 2
+WARNING:2023-04-12 16:54:41,374:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:54:41,374:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:54:41,374:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:54:41,374:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:54:41,374:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:54:41,374:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:54:41,374:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:54:41,374:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:54:41,374:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:54:41,374:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:54:41,374:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:54:41,374:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:54:41,374:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:54:41,374:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:54:41,374:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:54:41,374:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:54:41,374:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:54:41,374:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:54:41,374:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:54:41,374:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 16:54:41,375:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:54:41,375:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:54:41,375:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:54:41,375:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:54:41,375:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:54:41,375:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:54:41,375:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:54:41,375:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:54:41,375:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:54:41,375:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:54:41,375:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:54:41,375:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:54:41,375:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:54:41,375:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:54:41,375:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:54:41,375:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:54:41,375:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:54:41,375:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:54:41,375:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:54:41,375:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:54:41,375:app:Hence withdrawal completed, closing the connection
+WARNING:2023-04-12 16:54:41,376:settings:Closing the connection
+WARNING:2023-04-12 16:54:41,376:settings:Closing the connection
+WARNING:2023-04-12 16:54:41,376:settings:Closing the connection
+WARNING:2023-04-12 16:54:41,376:settings:Closing the connection
+WARNING:2023-04-12 16:56:45,953:app:Starting the db connection to deposit into the account
+WARNING:2023-04-12 16:56:45,953:app:Starting the db connection to deposit into the account
+WARNING:2023-04-12 16:56:45,953:app:Starting the db connection to deposit into the account
+WARNING:2023-04-12 16:56:45,953:app:Starting the db connection to deposit into the account
+WARNING:2023-04-12 16:56:45,953:app:Starting the db connection to deposit into the account
+WARNING:2023-04-12 16:56:45,953:app:Starting the db connection to deposit into the account
+WARNING:2023-04-12 16:56:45,953:app:Starting the db connection to deposit into the account
+WARNING:2023-04-12 16:56:45,953:app:Starting the db connection to deposit into the account
+WARNING:2023-04-12 16:56:45,953:app:Starting the db connection to deposit into the account
+WARNING:2023-04-12 16:56:45,953:app:Starting the db connection to deposit into the account
+WARNING:2023-04-12 16:56:45,953:app:Starting the db connection to deposit into the account
+WARNING:2023-04-12 16:56:45,953:app:Starting the db connection to deposit into the account
+WARNING:2023-04-12 16:56:45,953:app:Starting the db connection to deposit into the account
+WARNING:2023-04-12 16:56:45,953:app:Starting the db connection to deposit into the account
+WARNING:2023-04-12 16:56:45,953:app:Starting the db connection to deposit into the account
+WARNING:2023-04-12 16:56:45,953:app:Starting the db connection to deposit into the account
+WARNING:2023-04-12 16:56:45,953:app:Starting the db connection to deposit into the account
+WARNING:2023-04-12 16:56:45,953:app:Starting the db connection to deposit into the account
+WARNING:2023-04-12 16:56:45,953:app:Starting the db connection to deposit into the account
+WARNING:2023-04-12 16:56:45,953:app:Starting the db connection to deposit into the account
+WARNING:2023-04-12 16:56:45,953:app:Starting the db connection to deposit into the account
+WARNING:2023-04-12 16:56:45,953:app:Starting the db connection to deposit into the account
+INFO:2023-04-12 16:56:46,175:app:Depositing amount into account no. 2 completed
+INFO:2023-04-12 16:56:46,175:app:Depositing amount into account no. 2 completed
+INFO:2023-04-12 16:56:46,175:app:Depositing amount into account no. 2 completed
+INFO:2023-04-12 16:56:46,175:app:Depositing amount into account no. 2 completed
+INFO:2023-04-12 16:56:46,175:app:Depositing amount into account no. 2 completed
+INFO:2023-04-12 16:56:46,175:app:Depositing amount into account no. 2 completed
+INFO:2023-04-12 16:56:46,175:app:Depositing amount into account no. 2 completed
+INFO:2023-04-12 16:56:46,175:app:Depositing amount into account no. 2 completed
+INFO:2023-04-12 16:56:46,175:app:Depositing amount into account no. 2 completed
+INFO:2023-04-12 16:56:46,175:app:Depositing amount into account no. 2 completed
+INFO:2023-04-12 16:56:46,175:app:Depositing amount into account no. 2 completed
+INFO:2023-04-12 16:56:46,175:app:Depositing amount into account no. 2 completed
+INFO:2023-04-12 16:56:46,175:app:Depositing amount into account no. 2 completed
+INFO:2023-04-12 16:56:46,175:app:Depositing amount into account no. 2 completed
+INFO:2023-04-12 16:56:46,175:app:Depositing amount into account no. 2 completed
+INFO:2023-04-12 16:56:46,175:app:Depositing amount into account no. 2 completed
+INFO:2023-04-12 16:56:46,175:app:Depositing amount into account no. 2 completed
+INFO:2023-04-12 16:56:46,175:app:Depositing amount into account no. 2 completed
+INFO:2023-04-12 16:56:46,175:app:Depositing amount into account no. 2 completed
+INFO:2023-04-12 16:56:46,175:app:Depositing amount into account no. 2 completed
+INFO:2023-04-12 16:56:46,175:app:Depositing amount into account no. 2 completed
+INFO:2023-04-12 16:56:46,175:app:Depositing amount into account no. 2 completed
+INFO:2023-04-12 16:56:46,175:app:Depositing amount into account no. 2 completed
+WARNING:2023-04-12 16:56:46,176:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 16:56:46,176:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 16:56:46,176:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 16:56:46,176:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 16:56:46,176:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 16:56:46,176:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 16:56:46,176:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 16:56:46,176:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 16:56:46,176:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 16:56:46,176:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 16:56:46,176:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 16:56:46,176:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 16:56:46,176:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 16:56:46,176:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 16:56:46,176:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 16:56:46,176:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 16:56:46,176:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 16:56:46,176:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 16:56:46,176:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 16:56:46,176:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 16:56:46,176:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 16:56:46,176:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 16:56:46,176:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 16:56:46,176:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 16:56:46,177:settings:Closing the connection
+WARNING:2023-04-12 16:56:46,177:settings:Closing the connection
+WARNING:2023-04-12 16:56:46,177:settings:Closing the connection
+WARNING:2023-04-12 16:56:46,177:settings:Closing the connection
+WARNING:2023-04-12 16:56:46,177:settings:Closing the connection
+WARNING:2023-04-12 17:14:01,163:app:Starting the db connection to deposit into the account
+WARNING:2023-04-12 17:14:01,765:app:Starting the db connection to send notification to the account no. 2
+WARNING:2023-04-12 17:14:01,765:app:Starting the db connection to send notification to the account no. 2
+INFO:2023-04-12 17:14:01,941:app:Transaction of 100.0 made on your account. New balance is 4000.
+INFO:2023-04-12 17:14:01,941:app:Transaction of 100.0 made on your account. New balance is 4000.
+INFO:2023-04-12 17:14:01,941:app:Transaction of 100.0 made on your account. New balance is 4000.
+WARNING:2023-04-12 17:14:01,942:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 17:14:01,942:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 17:14:01,942:app:Hence notification sent, closing the connection
+WARNING:2023-04-12 17:14:01,942:app:Hence notification sent, closing the connection
+INFO:2023-04-12 17:14:01,942:app:Depositing amount into account no. 2 completed
+INFO:2023-04-12 17:14:01,942:app:Depositing amount into account no. 2 completed
+INFO:2023-04-12 17:14:01,942:app:Depositing amount into account no. 2 completed
+INFO:2023-04-12 17:14:01,942:app:Depositing amount into account no. 2 completed
+INFO:2023-04-12 17:14:01,942:app:Depositing amount into account no. 2 completed
+WARNING:2023-04-12 17:14:01,942:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 17:14:01,942:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 17:14:01,942:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 17:14:01,942:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 17:14:01,942:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 17:14:01,942:app:Hence deposit completed, closing the connection
+WARNING:2023-04-12 17:14:01,943:settings:Closing the connection through exception function
+WARNING:2023-04-12 17:19:42,563:app:Starting the db connection to delete the account
+WARNING:2023-04-12 17:19:42,563:app:Starting the db connection to delete the account
+WARNING:2023-04-12 17:19:42,563:app:Starting the db connection to delete the account
+WARNING:2023-04-12 17:19:42,563:app:Starting the db connection to delete the account
+WARNING:2023-04-12 17:19:42,563:app:Starting the db connection to delete the account
+WARNING:2023-04-12 17:19:42,563:app:Starting the db connection to delete the account
+WARNING:2023-04-12 17:19:42,563:app:Starting the db connection to delete the account
+INFO:2023-04-12 17:19:42,563:app:Account no 2 deleted from the table
+INFO:2023-04-12 17:19:42,563:app:Account no 2 deleted from the table
+INFO:2023-04-12 17:19:42,563:app:Account no 2 deleted from the table
+INFO:2023-04-12 17:19:42,563:app:Account no 2 deleted from the table
+INFO:2023-04-12 17:19:42,563:app:Account no 2 deleted from the table
+INFO:2023-04-12 17:19:42,563:app:Account no 2 deleted from the table
+INFO:2023-04-12 17:19:42,563:app:Account no 2 deleted from the table
+INFO:2023-04-12 17:19:42,563:app:Account no 2 deleted from the table
+WARNING:2023-04-12 17:19:42,564:app:Hence accounts deleted, closing the connection
+WARNING:2023-04-12 17:19:42,564:app:Hence accounts deleted, closing the connection
+WARNING:2023-04-12 17:19:42,564:app:Hence accounts deleted, closing the connection
+WARNING:2023-04-12 17:19:42,564:app:Hence accounts deleted, closing the connection
+WARNING:2023-04-12 17:19:42,564:app:Hence accounts deleted, closing the connection
+WARNING:2023-04-12 17:19:42,564:app:Hence accounts deleted, closing the connection
+WARNING:2023-04-12 17:19:42,564:app:Hence accounts deleted, closing the connection
+WARNING:2023-04-12 17:19:42,564:app:Hence accounts deleted, closing the connection
+WARNING:2023-04-12 17:19:42,564:app:Hence accounts deleted, closing the connection
+WARNING:2023-04-12 17:20:32,341:app:Starting the db connection to delete the account
+INFO:2023-04-12 17:20:32,719:app:loan amount limit for account no. 2 is 41000
+INFO:2023-04-12 17:20:32,719:app:loan amount limit for account no. 2 is 41000
+WARNING:2023-04-12 17:20:32,720:app:Hence loan limit is set, closing the connection
+WARNING:2023-04-12 17:20:32,720:app:Hence loan limit is set, closing the connection
+WARNING:2023-04-12 17:20:32,720:app:Hence loan limit is set, closing the connection

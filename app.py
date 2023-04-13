@@ -19,7 +19,6 @@ app.config['SECRET_KEY'] = 'super secret key'
 
 
 
-
 @app.route("/insert", methods=["POST"])      # CREATE an account
 @handle_exceptions
 def create_account():
@@ -109,9 +108,33 @@ def withdrawal(srno):
     # Log the details into logger file
     logger(__name__).info(f"Amount withdrawal from account no. {srno} completed")
 
+    message = f"Transaction of {amount} made on your account. New balance is {balance}."
+    send_notifications(srno, message)
+
     logger(__name__).warning("Hence withdrawal completed, closing the connection")
 
     return jsonify({"message": "Withdrawal completed", "amount": updated_amt}), 200
+
+def send_notifications(srno, message):
+    # start the database connection
+    cur, conn = set_connection()
+    logger(__name__).warning(f"Starting the db connection to send notification to the account no. {srno}")
+
+
+    # execute the PUT query to send notification
+    query = "UPDATE bank SET last_notif = %s WHERE srno = %s"
+    values = (message, srno)
+
+    cur.execute(query, values)
+    conn.commit()
+
+    # Log the details into logger file
+    logger(__name__).info(message)
+
+    # close the database connection
+    logger(__name__).warning("Hence notification sent, closing the connection")
+    return jsonify({"message": message, "holder_name_no": srno}), 200
+
 
 
 @app.route("/deposit/<int:srno>", methods=["PUT"], endpoint='deposit')
@@ -120,6 +143,7 @@ def deposit(srno):
     # start the database connection
     cur, conn = set_connection()
     logger(__name__).warning("Starting the db connection to deposit into the account")
+
     # fetch the balance from table
     cur.execute("SELECT balance from bank WHERE srno = %s", (srno,))
     get_balance = cur.fetchall()
@@ -144,12 +168,14 @@ def deposit(srno):
     flash("Amount Deposited")
     conn.commit()
 
+    message = f"Transaction of {amount} made on your account. New balance is {balance}."
+    send_notifications(srno, message)
+
     # Log the details into logger file
     logger(__name__).info(f"Depositing amount into account no. {srno} completed")
 
     logger(__name__).warning("Hence deposit completed, closing the connection")
     return jsonify({"message": "Amount Deposited", "amount": updated_balance}), 200
-
 
 
 @app.route("/bank/link_account/<int:srno>", methods=["PUT"], endpoint='link_accounts')
@@ -223,6 +249,7 @@ def delete_account(srno):
     delete_query = "DELETE from bank WHERE srno = %s"
     cur.execute(delete_query, (srno,))
     conn.commit()
+
     # Log the details into logger file
     logger(__name__).info(f"Account no {srno} deleted from the table")
 
@@ -231,6 +258,39 @@ def delete_account(srno):
     logger(__name__).warning("Hence accounts deleted, closing the connection")
 
     return jsonify({"message": "Deleted Successfully", "holder_name_no": srno}), 200
+
+
+# Check loan is available or not
+@app.route("/bank/loan/<int:srno>", methods=["PUT"], endpoint='loan_amount_limit')      # DELETE account from the list
+def check_loan_amount_limit(srno):
+    # start the database connection
+    cur, conn = set_connection()
+    logger(__name__).warning("Starting the db connection to delete the account")
+
+    # fetch the balance from table
+    cur.execute("SELECT balance from bank WHERE srno = %s", (srno,))
+    get_balance = cur.fetchall()
+    balance = get_balance[0][0]
+    print("get balance", get_balance)
+
+    loan_amount = balance * 10
+    query = "UPDATE bank SET loan_avail = %s WHERE srno = %s"
+    values = (loan_amount, srno)
+
+    cur.execute(query, values)
+    conn.commit()
+
+    # Log the details into logger file
+    logger(__name__).info(f"loan amount limit for account no. {srno} is {loan_amount}")
+
+    # close the database connection
+
+    logger(__name__).warning("Hence loan limit is set, closing the connection")
+
+    return jsonify({"message": f"loan amount limit for account no. {srno} is {loan_amount}",
+                    "holder_name_no": srno}), 200
+
+
 
 
 if __name__ == "__main__":
