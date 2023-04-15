@@ -115,6 +115,7 @@ def withdrawal(srno):
 
     return jsonify({"message": "Withdrawal completed", "amount": updated_amt}), 200
 
+
 def send_notifications(srno, message):
     # start the database connection
     cur, conn = set_connection()
@@ -289,6 +290,28 @@ def check_loan_amount_limit(srno):
 
     return jsonify({"message": f"loan amount limit for account no. {srno} is {loan_amount}",
                     "holder_name_no": srno}), 200
+
+
+@app.route("/bank/search/<string:name>", methods=["GET"], endpoint='search_holder_name')
+@handle_exceptions
+def search_holder_name(name):
+    cur, conn = set_connection()
+    logger(__name__).warning("Starting the db connection to search holder's name")
+
+    show_query = "SELECT * FROM game WHERE holder_name = %s;"
+    cur.execute(show_query, (name,))
+
+    get_holder = cur.fetchone()
+    print(get_holder)
+
+    if not get_holder:
+        # Log the details into logger file
+        logger(__name__).info(f"{name} not found in the table")
+        return jsonify({"message": f"{name} not found in the table"}), 200
+
+    # Log the details into logger file
+    logger(__name__).info(f"{name} found in the table")
+    return jsonify({"message": f"{name} found in the table"}), 200
 
 
 
